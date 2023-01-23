@@ -280,7 +280,6 @@ img {
   width: 100%;
   height: 100%;
 
-  display: block;
   border-radius: 50%;
 
   display: flex;
@@ -288,11 +287,11 @@ img {
   justify-content: center;
 }
 
-.team-soc-link:is(:hover,:focus){
+.team-soc-link:is(:hover, :focus) {
   background-color: var(--pressed-state-color);
 }
 
-.section-description{
+.section-description {
   margin-bottom: 8px;
 }
 .card-description-studio {
@@ -300,13 +299,63 @@ img {
   padding-bottom: 32px;
   text-align: center;
 }
+
+/* ------CUSTOMERS-------- */
+
+.customers {
+  padding-top: 130px;
+}
+
+.customers-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.customers-item {
+  flex-basis: calc((100% - 120px) / 6);
+  height: 88px;
+}
+.customers-link {
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid var(--subtle-color);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--subtle-color);
+}
+.customers-logo {
+  fill: currentColor;
+}
+.customers-link:is(:hover, :focus) {
+  border-color: var(--pressed-state-color);
+  color: var(--pressed-state-color);
+}
+
 /* FOOTER */
 
 .footer {
   background-color: var(--dark-color);
   padding-top: 100px;
   padding-bottom: 100px;
-  /* padding-left: 156px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -328,6 +377,43 @@ img {
   max-width: 264px;
 
   margin-top: 16px;
+  margin-right: 120px;
+}
+
+.footer-soc {
+  max-width: 208px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.footer-soc-title {
+  font-weight: 500;
+  color: var(--white-color);
+
+  margin-bottom: 16px;
+}
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+  flex-grow: 1;
+}
+.footer-soc-item {
+  height: 40px;
+  width: calc((100% - 16 * 3) / 4);
+}
+.footer-soc-link {
+  width: 40px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  margin-left: 0;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-soc-icon {
 }
 
 /* --------PORTFOLIO FILTERS----------- */
